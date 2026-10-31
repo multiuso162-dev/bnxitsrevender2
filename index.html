@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BNXITS Revender</title>
+<style>
+:root{--navy:#06152f;--blue:#087cf0;--sky:#54c7ff;--pale:#eaf6ff;--text:#eef7ff;--muted:#a9c4df;--card:#0b2142;--line:#20436c}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top right,#123f76 0,#06152f 45%,#030b19 100%);color:var(--text);min-height:100vh}
+header{padding:24px 18px;text-align:center;border-bottom:1px solid #1c3b60;background:#06152fcc;position:sticky;top:0;backdrop-filter:blur(12px);z-index:5}
+.logo{font-size:clamp(25px,6vw,38px);font-weight:900;letter-spacing:1px}.logo span{color:var(--sky)}header p{margin:7px 0 0;color:var(--muted);font-size:14px}
+main{max-width:1050px;margin:auto;padding:28px 16px 50px}.hero{text-align:center;margin:10px auto 28px}.tag{display:inline-block;border:1px solid #27669d;border-radius:99px;padding:7px 12px;color:#a9e5ff;font-size:12px;background:#0a2a4b}.hero h1{font-size:clamp(27px,6vw,44px);margin:16px 0 9px}.hero h1 span{color:var(--sky)}.hero p{color:var(--muted);line-height:1.6;margin:0 auto;max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.plan{background:linear-gradient(160deg,#0d2a50,#081a34);border:1px solid var(--line);border-radius:17px;padding:20px;position:relative;box-shadow:0 12px 28px #0003}.plan.featured{border-color:var(--sky);box-shadow:0 0 0 1px #54c7ff30,0 14px 30px #0004}.badge{position:absolute;right:13px;top:13px;background:#0e7dd4;color:white;border-radius:99px;font-size:10px;padding:5px 8px;font-weight:bold}.plan h2{font-size:17px;margin:0 0 12px}.price{font-size:30px;font-weight:800;color:#fff}.price small{font-size:13px;color:var(--muted);font-weight:normal}.plan ul{padding-left:18px;color:#bdd4eb;line-height:1.8;font-size:13px;min-height:52px}.choose{width:100%;border:0;border-radius:10px;padding:12px;background:linear-gradient(90deg,var(--blue),var(--sky));color:#04152b;font-weight:800;font-size:14px;cursor:pointer}.choose:hover{filter:brightness(1.08)}
+.panel{margin-top:28px;background:#081b35;border:1px solid var(--line);border-radius:18px;padding:22px}.panel h2{margin:0 0 7px;font-size:22px}.sub{color:var(--muted);font-size:14px;line-height:1.5;margin:0 0 18px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:13px;color:#c8def2}.field input{width:100%;padding:13px;border-radius:9px;border:1px solid #2b4c70;background:#061329;color:white;font-size:15px;outline:none}.field input:focus{border-color:var(--sky)}.selected{margin:15px 0;padding:13px;border-radius:10px;background:#0d2b4d;color:#cce8ff;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.selected strong{color:white}.pixbox{margin-top:18px;padding:16px;border:1px dashed #3b80b5;border-radius:12px;background:#06162c}.pixbox h3{margin:0 0 6px;font-size:16px}.pixbox p{margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.5}.pixrow{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.pixkey{font-weight:bold;letter-spacing:.4px;color:#bcecff;overflow-wrap:anywhere}.copy{border:1px solid #3984b8;background:#12395d;color:#e7f7ff;border-radius:8px;padding:10px 13px;cursor:pointer}.buy{width:100%;margin-top:15px;padding:15px;border:0;border-radius:11px;background:#20c56b;color:#032616;font-size:16px;font-weight:900;cursor:pointer}.notice{font-size:12px;color:#8faecc;line-height:1.6;margin:12px 0 0}.status{font-size:13px;color:#80e8b0;margin-top:8px;min-height:18px}footer{text-align:center;color:#7190b0;font-size:12px;padding:22px}
+@media(max-width:560px){.formgrid{grid-template-columns:1fr}.panel{padding:17px}.plan ul{min-height:0}}
+</style>
+</head>
+<body>
+<header><div class="logo">BNXITS <span>Revender</span></div><p>Seu acesso começa aqui • Atendimento pelo WhatsApp</p></header>
+<main>
+<section class="hero"><span class="tag">⚡ PLANOS DISPONÍVEIS</span><h1>Escolha seu <span>plano</span></h1><p>Selecione uma opção, informe seus dados e finalize seu pedido com atendimento direto pelo WhatsApp.</p></section>
+<section class="grid" aria-label="Planos">
+<article class="plan"><h2>Cheat • 6 horas</h2><div class="price">R$ 12,00</div><ul><li>Acesso por 6 horas</li><li>Atendimento para ativação</li></ul><button class="choose" data-plan="Cheat 6 horas" data-price="12,00">Selecionar plano</button></article>
+<article class="plan"><h2>Cheat • 12 horas</h2><div class="price">R$ 17,00</div><ul><li>Acesso por 12 horas</li><li>Atendimento para ativação</li></ul><button class="choose" data-plan="Cheat 12 horas" data-price="17,00">Selecionar plano</button></article>
+<article class="plan featured"><span class="badge">POPULAR</span><h2>Cheat • 1 dia</h2><div class="price">R$ 20,00</div><ul><li>Acesso por 1 dia</li><li>Atendimento para ativação</li></ul><button class="choose" data-plan="Cheat 1 dia" data-price="20,00">Selecionar plano</button></article>
+<article class="plan"><h2>Cheat • 7 dias</h2><div class="price">R$ 65,00</div><ul><li>Acesso por 7 dias</li><li>Atendimento para ativação</li></ul><button class="choose" data-plan="Cheat 7 dias" data-price="65,00">Selecionar plano</button></article>
+<article class="plan"><h2>Cheat • 30 dias</h2><div class="price">R$ 125,00</div><ul><li>Acesso por 30 dias</li><li>Atendimento para ativação</li></ul><button class="choose" data-plan="Cheat 30 dias" data-price="125,00">Selecionar plano</button></article>
+</section>
+<section class="panel" id="pedido"><h2>Finalizar pedido</h2><p class="sub">Preencha seus dados. O pedido será enviado para o WhatsApp da BNXITS Revender.</p>
+<div class="formgrid"><div class="field"><label for="nome">Nome completo</label><input id="nome" type="text" placeholder="Digite seu nome" autocomplete="name" /></div><div class="field"><label for="email">E-mail</label><input id="email" type="email" placeholder="voce@email.com" autocomplete="email" /></div></div>
+<div class="selected"><span>Plano escolhido: <strong id="planoEscolhido">Nenhum plano selecionado</strong></span><span>Total: <strong id="total">—</strong></span></div>
+<div class="pixbox"><h3>Pagamento via Pix</h3><p>Use a chave abaixo para realizar o pagamento. Confira os dados antes de transferir.</p><div class="pixrow"><span class="pixkey" id="pixKey">21972656587</span><button class="copy" id="copiarPix" type="button">Copiar chave Pix</button></div><div class="status" id="statusPix" aria-live="polite"></div></div>
+<button class="buy" id="comprar" type="button">Enviar pedido pelo WhatsApp</button><p class="notice">A confirmação do pagamento e a entrega do acesso são feitas manualmente após a conferência do Pix. Este site não confirma pagamentos automaticamente.</p>
+</section>
+</main><footer>© 2026 BNXITS Revender • Atendimento online</footer>
+<script>
+let plano='', preco='';
+const planoEl=document.getElementById('planoEscolhido'), totalEl=document.getElementById('total');
+document.querySelectorAll('.choose').forEach(btn=>btn.addEventListener('click',()=>{plano=btn.dataset.plan;preco=btn.dataset.price;planoEl.textContent=plano;totalEl.textContent='R$ '+preco;document.getElementById('pedido').scrollIntoView({behavior:'smooth'});}));
+document.getElementById('copiarPix').addEventListener('click',async()=>{const chave='21972656587';try{await navigator.clipboard.writeText(chave);document.getElementById('statusPix').textContent='Chave Pix copiada!';}catch(e){const campo=document.createElement('textarea');campo.value=chave;document.body.appendChild(campo);campo.select();document.execCommand('copy');campo.remove();document.getElementById('statusPix').textContent='Chave Pix copiada!';}});
+document.getElementById('comprar').addEventListener('click',()=>{const nome=document.getElementById('nome').value.trim(),email=document.getElementById('email').value.trim();if(!plano){alert('Selecione um plano primeiro.');return;}if(!nome||!email){alert('Preencha seu nome completo e e-mail.');return;}if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){alert('Digite um e-mail válido.');return;}const mensagem=`Olá! Quero fazer um pedido na BNXITS Revender.%0A%0ANome: ${encodeURIComponent(nome)}%0AE-mail: ${encodeURIComponent(email)}%0APlano: ${encodeURIComponent(plano)}%0AValor: R$ ${encodeURIComponent(preco)}%0AChave Pix: 21972656587%0A%0AEnvio o comprovante para confirmação.`;window.open('https://wa.me/5521972656587?text='+mensagem,'_blank');});
+</script>
+</body>
+</html>
